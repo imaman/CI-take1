@@ -4,7 +4,7 @@
   "description": "playground for CI",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "unit": "mocha --recursive --reporter spec './src/**/*.test.js'"
   },
   "repository": {
     "type": "git",
