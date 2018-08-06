@@ -7,8 +7,11 @@ jobs:
       - checkout
       - run:
           name: Greeting
-          command: notacommand echo Hello, world.
+          command: echo Hello, world.
       - run:
           name: Print the Current Time
-          command: date
+          command: notacommand date
+      - run:
+          name: finally
+          command: echo '-the end-'
 
