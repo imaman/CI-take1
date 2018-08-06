@@ -10,7 +10,7 @@ jobs:
           command: echo Hello, world.
       - run:
           name: Print the Current Time
-          command: notacommand date
+          command: date
       - run:
           name: finally
           command: echo '-the end-'
