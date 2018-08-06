@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  one:
     docker:
       - image: debian:stretch
     steps:
@@ -14,4 +14,19 @@ jobs:
       - run:
           name: finally
           command: echo '-the end-'
+  two:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
+      - run:
+          name: finally
+          command: echo '-the end-'
+
 
