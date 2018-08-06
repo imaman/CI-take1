@@ -1,10 +1,10 @@
-var expect = require('chai').expect;
+const expect = require('chai').expect;
+const logic = require('./logic.js');
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      expect('a').to.eql('a');
+describe('logic', () => {
+    it('compute time difference', () => {
+        const actual = logic.compute('2008-01-01');
+        expect(actual).to.eql('13 years ago');
     });
-  });
 });
 
